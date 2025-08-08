@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -10,12 +11,84 @@
         Code header ở đây
     </header>
 
-    <section>
-        Code hero section ở đây
-    </section>
+    <section class="hero-section">
+       <div class="hero-scroll-container">
 
-    <section>
-        Code Tin tức ở đây
+            <div class="hero-card" style="background-image: url('../assets/Image/kinh_nghiem_hue.jpg');">
+                <div class="hero-label">Đại Nội Huế</div>
+            </div>
+
+            <div class="hero-card" style="background-image: url('../assets/Image/cau_truong_tien.jpg');">
+                <div class="hero-label">Cầu Trường Tiền</div>
+            </div>
+
+            <div class="hero-card" style="background-image: url('../assets/Image/chua_thien_mu.jpg');">
+                <div class="hero-label">Chùa Thiên Mụ</div>
+            </div>
+
+            <div class="hero-card" style="background-image: url('../assets/Image/lang_khai_dinh.jpg');">
+                <div class="hero-label">Lăng Khải Định</div>
+            </div>
+
+            <div class="hero-card" style="background-image: url('../assets/Image/lang_minh_mang.jpg');">
+                <div class="hero-label">Lăng Minh Mạng</div>
+            </div>
+
+            <div class="hero-card" style="background-image: url('../assets/Image/dien_hon_chen.jpeg');">
+                <div class="hero-label">Điện Hòn Chén</div>
+            </div>
+
+            <div class="hero-card" style="background-image: url('../assets/Image/bia_quoc_hoc.jpg');">
+                <div class="hero-label">Bia Quốc Học</div>
+            </div>
+
+            <div class="hero-card" style="background-image: url('../assets/Image/nha_hat_duyet_thi_duong.jpg');">
+                <div class="hero-label">Nhà hát Duyệt Thị Đường</div>
+            </div>
+
+            <div class="hero-card" style="background-image: url('../assets/Image/ki_dai_hue.jpg');">
+                <div class="hero-label">Kì Đài Huế</div>
+            </div>
+
+            <div class="hero-card" style="background-image: url('../assets/Image/bach_ma.jpeg');">
+                <div class="hero-label">Vườn Quốc Gia Bạch Mã</div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="tintuc">
+        <h2>TIN TỨC</h2>
+        <div class="tintuc-grid">
+            <div class="tintuc-item">
+            <img src="../assets/Image/tin_tuc_khaimac.jpg" alt="Festival Huế 2025">
+            <div class="tintuc-content">
+                <h3>Khai mạc Festival Huế 2025</h3>
+                <p>Lễ khai mạc rực rỡ với hàng nghìn ánh đèn, kết hợp trình diễn nghệ thuật đặc sắc, mở màn cho chuỗi sự kiện hấp dẫn suốt mùa Festival.</p>
+            </div>
+            </div>
+            <div class="tintuc-item">
+            <img src="../assets/Image/tin_tuc_amthuc.jpg" alt="Ẩm thực Cố đô">
+            <div class="tintuc-content">
+                <h3>Mê cung ẩm thực cố đô</h3>
+                <p>Khám phá những món ăn cung đình và dân gian đậm chất Huế, được chế biến bởi các nghệ nhân ẩm thực lâu năm.</p>
+            </div>
+            </div>
+            <div class="tintuc-item">
+            <img src="../assets/Image/tin_tuc_ntt.jpg" alt="Làng nghề Huế">
+            <div class="tintuc-content">
+                <h3>Làng nghề truyền thống Huế</h3>
+                <p>Trải nghiệm làm nón lá, thêu tay, và các sản phẩm thủ công mỹ nghệ tinh xảo từ những nghệ nhân làng nghề.</p>
+            </div>
+            </div>
+            <div class="tintuc-item">
+            <img src="../assets/Image/tin_tuc_nt.jpg" alt="Đêm nghệ thuật">
+            <div class="tintuc-content">
+                <h3>Đêm nghệ thuật trên sông Hương</h3>
+                <p>Thưởng thức đêm nhạc trữ tình, kết hợp ánh sáng lung linh trên dòng Hương thơ mộng.</p>
+            </div>
+            </div>
+        </div>
     </section>
 
     <section>
@@ -31,7 +104,47 @@
     </section>
 
     <footer>
-        Code footer ở đây
+        <div class="footer-left">
+        <h2>HUẾ FESTIVAL</h2>
+        <p>“Di Sản Hội Nhập, Văn Hóa Tỏa Sáng”</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-column">
+        <h3>Thông tin tổ chức</h3>
+        <ul>
+            <li>Giới thiệu</li>
+            <li>Liên hệ</li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Festival Huế App:</h3>
+        <ul>
+            <li>Google Play</li>
+            <li>App Store</li>
+        </ul>
+    </div>
+
+    <div class="footer-column" style="flex:1; min-width:250px;">
+        <h3>Đăng kí để nhận thông tin mới nhất:</h3>
+        <div class="subscribe">
+            <input type="email" placeholder="youremail@gmail.com">
+            <button>Đăng kí</button>
+        </div>
+        <div class="contact-info">
+            📧 contact@festivalhue.vn<br>
+            📍 Huế, Việt Nam
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Festival Huế. All rights reserved.
+    </div>
     </footer>
 </body>
 </html>
