@@ -1,0 +1,221 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px greenyellow solid; */
+}
+
+/* All */
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.font-jura {
+    font-family: "Jura", sans-serif;
+}
+
+.font-keania-one {
+    font-family: "Keania One", sans-serif;
+}
+
+.font-megrim {
+    font-family: "Megrim", system-ui;
+}
+
+.sz-64 {
+    font-size: 64px;
+    line-height: 64px;
+}
+.sz-128 {
+    font-size: 128px;
+    line-height: 128px;
+}
+
+/* Background img */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background-image: url('../assets/images/festival-bgr.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.8) contrast(1.1) drop-shadow(0 0 40px rgba(0,0,0,0.5));
+  z-index: -1;
+}
+
+
+/* Header */
+header {
+    color: white;
+    position: relative;
+}
+
+header .wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+header .fixedNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 130px;
+  z-index: 9999;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header .nav img {
+    height: 100px;
+}
+
+header .nav .logo {
+    display: flex;
+    cursor: pointer;
+}
+
+header .nav .inner-text {
+    font-size: 28px;
+    margin-left: 10px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+header .nav {
+    padding: 15px 0;
+    margin: 0 40px;
+}
+
+header .menu a {
+    position: relative;
+    padding: 10px 0;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px; /* độ dày gạch chân */
+  width: 100%;
+  background: white; /* màu gạch chân */
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  opacity: 0;
+}
+
+.menu li a:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+/* header .menu a:hover {
+    text-decoration: underline;
+} */
+
+header .ticket-btn {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+header .ticket-btn {
+    transition: all .5s ease;
+    color: #fff;
+    border: 3px solid white;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+
+header .ticket-btn:hover {
+    color: #001F3F;
+    background-color: #fff;
+}
+
+header .hero-section {
+    height: 800px;
+    flex-direction: column;
+}
+
+header .hero-section .inner-desc {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.inner-btn {
+    border-radius: 4px;
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    padding: 10px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.inner-btn{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.inner-btn:after {
+    font-family: "FontAwesome";
+    font-weight: 100;
+    content: '\f061';
+    position: absolute;
+    opacity: 0;  
+    top: 13px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.inner-btn:hover{
+    padding-right: 50px;
+    padding-left:8px;
+}
+
+.inner-btn:hover:after {
+    opacity: 1;
+    right: 20px;
+}
+
+/* News */
+.news {
+    height: 1000px;
+}
