@@ -109,96 +109,136 @@
   color: #444;
   line-height: 1.4;
 }
-footer {
-        background-color: #5c5c5c;
-        padding: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        border: 2px solid #00aaff; /* viền xanh giống hình */
-        flex-wrap: wrap;
-    }
+.footer {
+  background: #555;
+  color: white;
+  font-family: sans-serif;
+  padding: 30px 0;
+}
 
-    .footer-left {
-        max-width: 250px;
-    }
+.footer-container {
+  max-width: 1100px; 
+  margin: 0 auto;
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  gap: 40px;
+  flex-wrap: wrap;
+}
 
-    .footer-left h2 {
-        margin: 0;
-        font-size: 22px;
-        font-weight: bold;
-    }
+.footer-left {
+  flex: 1;
+  min-width: 220px;
+  margin-left: -50px; 
+}
 
-    .footer-left p {
-        margin: 5px 0 15px;
-        font-size: 20px;
-        font-weight: bold;
-    }
+.footer-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-column {
+  min-width: 200px;
+  flex:1;
+  margin-left: 100px;
+}
+.footer-slogan {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 
-    .social-icons a {
-        display: inline-block;
-        margin-right: 10px;
-        color: white;
-        font-size: 25px;
-        text-decoration: none;
-    }
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
 
-    .footer-column {
-        min-width: 200px;
-        margin-bottom: 15px;
-    }
+.social-icons a:hover {
+  color: #ffd700; 
+}
+.footer-right {
+  flex: 2;
+  min-width: 300px;
+}
 
-    .footer-column h3 {
-        font-size: 16px;
-        margin-bottom: 5px;
-        text-decoration: underline;
-    }
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
-    .footer-column ul {
-        list-style: disc;
-        margin: 0;
-        padding-left: 20px;
-    }
+.footer-links h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
 
-    .footer-column ul li {
-        margin-bottom: 5px;
-    }
+.footer-links ul {
+  list-style: disc;
+  padding-left: 20px;
+}
 
-    .subscribe {
-        display: flex;
-        margin: 10px 0;
-    }
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
 
-    .subscribe input {
-        padding: 8px;
-        border: none;
-        outline: none;
-        flex: 1;
-        border-radius: 5px 0 0 5px;
-    }
+.subscribe {
+  margin-bottom: 15px;
+}
 
-    .subscribe button {
-        background-color: black;
-        color: white;
-        border: none;
-        padding: 8px 15px;
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-    }
+.subscribe h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
 
-    .contact-info {
-        font-size: 14px;
-        margin: 10px 0;
-    }
+.subscribe form {
+  display: flex;
+  align-items: center;
+}
 
-    .footer-bottom {
-        text-align: center;
-        width: 100%;
-        font-size: 12px;
-        border-top: 1px solid #aaa;
-        padding-top: 10px;
-        margin-top: 20px;
-    }
+.subscribe input {
+  /* flex: 1; */
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 300px; 
+  margin-top: 10px;
+}
+
+.subscribe button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-info {
+  font-size: 14px;
+  margin-top: 35px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+
 
 
 
