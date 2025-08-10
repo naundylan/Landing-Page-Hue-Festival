@@ -1,10 +1,10 @@
-.hero-section {
+.intro-section {
   position: relative;
   z-index: 2;
 }
 
-/* Nền hero section */
-.hero-background {
+/* Nền intro section */
+.intro-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@
 }
 
 /* Container cuộn ngang  */
-.hero-scroll-container {
+.intro-scroll-container {
   display: flex;
   gap: 10px;
   overflow-x: auto;
@@ -31,7 +31,7 @@
 }
 
 /* Card */
-.hero-card {
+.intro-card {
   min-width: 300px;
   height: 160px;
   background-size: cover;
@@ -45,7 +45,7 @@
 }
 
 /* Label */
-.hero-label {
+.intro-label {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -59,24 +59,24 @@
   border-bottom-right-radius: 16px;
   box-sizing: border-box;
 }
-.tintuc {
+.news {
   padding: 40px;
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(6px);
 }
 
-.tintuc h2 {
+.news h2 {
   font-size: 28px;
   margin-bottom: 20px;
 }
 
-.tintuc-grid {
+.news-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
 }
 
-.tintuc-item {
+.news-item {
   display: flex;
   background: white;
   border-radius: 8px;
@@ -85,26 +85,26 @@
   transition: transform 0.2s ease;
 }
 
-.tintuc-item:hover {
+.news-item:hover {
   transform: translateY(-5px);
 }
 
-.tintuc-item img {
+.news-item img {
   width: 160px;
   height: 120px;
   object-fit: cover;
 }
 
-.tintuc-content {
+.news-content {
   padding: 15px;
 }
 
-.tintuc-content h3 {
+.news-content h3 {
   font-size: 18px;
   margin-bottom: 8px;
 }
 
-.tintuc-content p {
+.news-content p {
   font-size: 14px;
   color: #444;
   line-height: 1.4;
