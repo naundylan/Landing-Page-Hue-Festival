@@ -1,3 +1,4 @@
+// Declare variables
 var navbar = document.querySelector('#navbar');
 var overlay = document.querySelector('.overlay');
 var dropdownMenu = document.querySelector('.dropdown-menu');

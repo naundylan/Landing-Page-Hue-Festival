@@ -114,14 +114,12 @@ header .menu .ctrl-bar a {
     font-weight: 700;
 }
 
-/* BUTTON MENU - ẨN MẶC ĐỊNH, HIỆN KHI RESPONSIVE */
 .open-btn {
     background-color: transparent !important;
     border: none !important;
     padding: 0;
     margin: 0;
     position: relative;
-    /* z-index: 250; */
     width: fit-content;
     height: fit-content;
 }
@@ -139,7 +137,7 @@ header .menu .open-btn:active {
     background-color: rgba(169, 169, 169, 0.445) !important;
 }
 
-/* OVERLAY - ĐỘC LẬP */
+/* Overlay */
 .overlay {
     position: fixed;
     top: 0;
@@ -147,11 +145,11 @@ header .menu .open-btn:active {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 200; /* Trung bình - trên navbar, dưới menu */
+    z-index: 200;
     backdrop-filter: blur(5px);
 }
 
-/* DROPDOWN MENU - ĐỘC LẬP */
+/* Dropdown menu */
 .dropdown {
     display: none;
 }
@@ -188,13 +186,11 @@ header .menu .open-btn:active {
     inset: unset !important;
 }
 
-/* HIỆN MENU */
 .dropdown-menu.show {
     right: 0 !important;
     top: 0 !important;
 }
 
-/* Menu header */
 .dropdown-menu::before {
     content: "MENU";
     display: block;
@@ -257,9 +253,8 @@ header .menu .open-btn:active {
     transform: translateX(5px);
 }
 
-/* Thêm icon cho menu items */
 .dropdown-item:nth-child(1)::before { content: "\f054"; }
-/* NAVBAR MENU STYLES */
+
 .menu .ctrl-bar li a::after {
   content: "";
   position: absolute;
@@ -303,7 +298,7 @@ header .ticket-btn:hover {
     background-color: #fff;
 }
 
-/* HERO SECTION */
+/* Hero section */
 header .hero-section {
     height: 800px;
     flex-direction: column;
@@ -432,7 +427,6 @@ header .hero-section .inner-text {
 }
 
 @media (max-width: 889px) {
-    /* HIỆN BUTTON MENU */
     .dropdown {
         display: block;
         position: fixed;
@@ -447,7 +441,6 @@ header .hero-section .inner-text {
         display: block !important;
     }
 
-    /* ẨN NAVIGATION BAR */
     header .ctrl-bar {
         display: none !important;
     }
