@@ -1,10 +1,10 @@
-/* reset css */
+/* Reset css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* outline: 1px greenyellow solid; */
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 /* All */
@@ -363,12 +363,16 @@ header .hero-section .inner-text {
 
 /* Responsive */
 @media (max-width: 1399px) {
+
+/* Header */
     header .nav .inner-text {
         letter-spacing: -1.5px;
     }
 }
 
 @media (max-width: 1199px) {
+
+/* Header */
     header .nav img {
         height: 70px;
     }
@@ -415,6 +419,7 @@ header .hero-section .inner-text {
         opacity: 1;
         right: 12px;
     }
+
 }
 
 
