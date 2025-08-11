@@ -500,8 +500,12 @@ header .hero-section .inner-text {
 
 .content h1{
     font-family: "Jura", sans-serif;
-    font-size: 65px;
+    font-size: 50px;
     margin-bottom: 2%;
+}
+
+.content p {
+  font-size: 16px;
 }
 
 .AmThuc{
@@ -651,7 +655,7 @@ img:hover {
 
 .NgheThuat-img img {
     width: 100%;
-    max-width: 720px;
+    max-width: 600px;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
     border: 8px solid #fff8e1;
