@@ -1,13 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HueFestival</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hue Festival 2025</title>
+    <!-- Link GG Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Keania+One&family=Megrim&display=swap" rel="stylesheet">
+    <!-- Link cdn CSS FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Ho+d5nLPdl32z4TQo9ox5+KhY1VzdtqREjq/q1k9xIogw5Ad5g8hJPoJfbI6qzMc6mDcoJ8Yq6LP3/jgA30uxA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Link cdn CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/style.css">
-</head>
+  </head>
 <body>
-    <!-- content -->
+    <!-- Overlay -->
+    <div class="overlay disabled"></div>
+    <!-- Dropdown -->
+    <div class="dropdown">
+        <button class="btn btn-secondary open-btn" data-bs-auto-close="false" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">GIỚI THIỆU</a></li>
+            <li><a class="dropdown-item" href="#">SỰ KIỆN</a></li>
+            <li><a class="dropdown-item" href="#">LỊCH TRÌNH</a></li>
+            <li><a class="dropdown-item" href="#">MUA VÉ NGAY</a></li>
+            <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+        </ul>
+    </div>
+    <!-- Backgr -->
+    <div class="background"></div>
+    <!-- Header -->
+    <header class="container-fluid">
+        <!-- Navbar -->
+        <div class="wrapper font-jura" id="navbar">
+            <div class="d-flex nav align-items-center justify-content-between">
+                <div class="col-4 logo">
+                    <a href="#" class="inner-img">
+                        <img src="../assets/images/festival-logo.png" alt="logo">
+                    </a>
+                    <div class="align-items-center d-flex inner-text"><p>DI SẢN VĂN HÓA<br>VỚI HỘI NHẬP PHÁT TRIỂN</p></div>
+                </div>
+                <div class="col menu d-flex align-items-center justify-content-end">
+                    <ul class="ctrl-bar d-flex align-items-center justify-content-center">
+                        <li><a href="#">GIỚI THIỆU</a></li>
+                        <li><a href="#">SỰ KIỆN</a></li>
+                        <li><a href="#">LỊCH TRÌNH</a></li>
+                        <li><a href="#" class="ticket-btn">MUA VÉ NGAY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero section -->
+        <div class="hero-section font-jura d-flex align-items-center justify-content-center">
+            <div class="text-center">
+                <div class="sz-64 inner-title font-keania-one">FESTIVAL</div>
+                <div class="sz-128 inner-text font-megrim">HUE 2025</div>
+            </div>
+            <div class="inner-desc">Festival Huế 2025 – Di sản Hội Nhập, Văn hóa Toả Sáng</div>
+            <div class="inner-btn"><a href="#">Tìm hiểu thêm</a></div>
+        </div>
+    </header>
+
+    <!-- News -->
+    <section class="intro-section">
+       <div class="intro-scroll-container">
+
+            <div class="intro-card" style="background-image: url('../assets/Image/kinh_nghiem_hue.jpg');">
+                <div class="intro-label">Đại Nội Huế</div>
+            </div>
+
+            <div class="intro-card" style="background-image: url('../assets/Image/cau_truong_tien.jpg');">
+                <div class="intro-label">Cầu Trường Tiền</div>
+            </div>
+
+            <div class="intro-card" style="background-image: url('../assets/Image/chua_thien_mu.jpg');">
+                <div class="intro-label">Chùa Thiên Mụ</div>
+            </div>
+
+            <div class="intro-card" style="background-image: url('../assets/Image/lang_khai_dinh.jpg');">
+                <div class="intro-label">Lăng Khải Định</div>
+            </div>
+
+            <div class="intro-card" style="background-image: url('../assets/Image/lang_minh_mang.jpg');">
+                <div class="intro-label">Lăng Minh Mạng</div>
+            </div>
+
+            <div class="intro-card" style="background-image: url('../assets/Image/dien_hon_chen.jpeg');">
+                <div class="intro-label">Điện Hòn Chén</div>
+            </div>
+
+            <div class="intro-card" style="background-image: url('../assets/Image/bia_quoc_hoc.jpg');">
+                <div class="intro-label">Bia Quốc Học</div>
+            </div>
+
+            <div class="intro-card" style="background-image: url('../assets/Image/nha_hat_duyet_thi_duong.jpg');">
+                <div class="intro-label">Nhà hát Duyệt Thị Đường</div>
+            </div>
+
+            <div class="intro-card" style="background-image: url('../assets/Image/ki_dai_hue.jpg');">
+                <div class="intro-label">Kì Đài Huế</div>
+            </div>
+
+            <div class="intro-card" style="background-image: url('../assets/Image/bach_ma.jpeg');">
+                <div class="intro-label">Vườn Quốc Gia Bạch Mã</div>
+            </div>
+
+        </div>
+    </section>
+  
+    
+    <section class="news">
+        <h2>TIN TỨC</h2>
+        <div class="news-grid">
+            <div class="news-item">
+            <img src="../assets/Image/tin_tuc_khaimac.jpg" alt="Festival Huế 2025">
+            <div class="news-content">
+                <h3>Khai mạc Festival Huế 2025</h3>
+                <p>Lễ khai mạc rực rỡ với hàng nghìn ánh đèn, kết hợp trình diễn nghệ thuật đặc sắc, mở màn cho chuỗi sự kiện hấp dẫn suốt mùa Festival.</p>
+            </div>
+            </div>
+            <div class="news-item">
+            <img src="../assets/Image/tin_tuc_amthuc.jpg" alt="Ẩm thực Cố đô">
+            <div class="news-content">
+                <h3>Mê cung ẩm thực cố đô</h3>
+                <p>Khám phá những món ăn cung đình và dân gian đậm chất Huế, được chế biến bởi các nghệ nhân ẩm thực lâu năm.</p>
+            </div>
+            </div>
+            <div class="news-item">
+            <img src="../assets/Image/tin_tuc_ntt.jpg" alt="Làng nghề Huế">
+            <div class="news-content">
+                <h3>Làng nghề truyền thống Huế</h3>
+                <p>Trải nghiệm làm nón lá, thêu tay, và các sản phẩm thủ công mỹ nghệ tinh xảo từ những nghệ nhân làng nghề.</p>
+            </div>
+            </div>
+            <div class="news-item">
+            <img src="../assets/Image/tin_tuc_nt.jpg" alt="Đêm nghệ thuật">
+            <div class="news-content">
+                <h3>Đêm nghệ thuật trên sông Hương</h3>
+                <p>Thưởng thức đêm nhạc trữ tình, kết hợp ánh sáng lung linh trên dòng Hương thơ mộng.</p>
+     </section>
+  
+    <!-- Content -->
     <div class="content">
         <div class="AmThuc">
             <div class="AmThuc-title">
@@ -72,7 +209,7 @@
                     <p>Festival nghề truyền thống Huế không chỉ là lễ hội tôn vinh nét “Tinh hoa nghề Việt” mà đã góp phần bảo tồn, phát triển và đưa sản phẩm làng nghề truyền thống đến với đông đảo người dân.Trải qua 9 lần tổ chức, Festival nghề truyền thống Huế không chỉ là lễ hội tôn vinh nét “Tinh hoa nghề Việt” mà còn tác động tích cực trong việc “hồi sinh” nhiều nghề và làng nghề truyền thống.
                     Hoạt động này góp phần bảo tồn, phát triển và đưa sản phẩm làng nghề truyền thống đến với cuộc sống thường nhật, nâng cao thu nhập cho người dân.</p>
                 </div>
-            </div>
+              </div>
             
             <div class="NgheTT-npb">
                 <div class="npb-item1">
@@ -92,8 +229,7 @@
                 </div>
             </div>
         </div>
-
-        <hr class="section-divider">
+      <hr class="section-divider">
 
         <div class="NgheThuat">
             <div class="NgheThuat-title">
@@ -108,5 +244,53 @@
                 </div>
         </div>
     </div>
+  
+     
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+            <h2 class="footer-title">HUẾ FESTIVAL</h2>
+            <p class="footer-slogan">“Di Sản Hội Nhập,<br>Nhập, Văn Hóa Tỏa Sáng”</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            </div>
+            <div class="footer-column">
+                <h3>Thông tin tổ chức</h3>
+                <ul>
+                <li>Giới thiệu</li>
+                <li>Liên hệ</li>
+                </ul>
+                <h3>Festival Huế App:</h3>
+                <ul>
+                <li>Google Play</li>
+                <li>App Store</li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <h3>Đăng kí để nhận thông tin mới nhất:</h3>
+                <form>
+                <input type="email" placeholder="youremail@gmail.com">
+                <button type="submit">Đăng kí</button>
+                </form>
+                <div class="contact-info">
+                📧 contact@festivalhue.vn <br>
+                📍 Huế, Việt Nam
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Festival Huế. All rights reserved.
+        </div>
+    </footer>
+    <!-- Link cdn JS FontAwesomes -->
+    <script src="https://kit.fontawesome.com/9421580485.js" crossorigin="anonymous"></script>
+    <!-- Link cdn JS Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="../assets/main.js"></script>
 </body>
 </html> 
