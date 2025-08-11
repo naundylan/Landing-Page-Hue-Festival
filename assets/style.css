@@ -499,7 +499,7 @@ header .hero-section .inner-text {
 /* Contents */
 .content{
     margin-top: 2%;
-    margin-left: 12%;
+    margin-left: 9%;
     margin-right: 8%;
     margin-bottom: 5%;
 }
@@ -550,7 +550,7 @@ header .hero-section .inner-text {
     transition: transform 0.3s;
 }
 img:hover {
-    transform: scale(1.03);        /* Hiệu ứng phóng nhẹ khi hover */
+    transform: scale(1.03);      
 }
 
 .NgheTT{
@@ -657,6 +657,7 @@ img:hover {
     max-width: 55%;
     display: flex;
     justify-content: flex-end;
+    margin-left: -60px;
 }
 
 .NgheThuat-img img {
