@@ -449,6 +449,8 @@ header .hero-section .inner-text {
 .news h2 {
   font-size: 45px;
   margin-bottom: 20px;
+  font-family: "Jura", sans-serif;
+    /* font-size: 50px; */
 }
 
 .news-grid {
@@ -525,19 +527,15 @@ header .hero-section .inner-text {
 }
 
 .AmThuc-img {
-    width: 1200px;
+    width: 100%;
     /* height: 400px; */
     /* height: 250px; 
     object-fit: cover; */
-    margin-top: 2%;
-    margin-bottom: 3%;
-    margin-right: 5%;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .AmThuc-img img {
+    margin: 20px auto;
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -583,7 +581,10 @@ img:hover {
 
 .NgheTT-ct {
     flex: 1;
-    margin-right: 9%;
+}
+
+.NgheTT-ct > p {
+    text-align: justify;
 }
 
 .NgheTT-npb {
@@ -609,7 +610,7 @@ img:hover {
 .npb-item2 img,
 .npb-item3 img {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
@@ -643,26 +644,26 @@ img:hover {
 
 .NgheThuat-row {
     display: flex;
+    gap: 50px;
     align-items: center;
-    gap: 40px;
+    justify-content: space-between;
+    /* gap: 40px; */
 }
 
 .NgheThuat-ct {
-    flex: 0 0 45%;
-    max-width: 45%;
+    width: 50%;
+    text-align: justify;
 }
 
 .NgheThuat-img {
-    flex: 0 0 55%;
-    max-width: 55%;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    margin-left: -60px;
+    justify-content: center;
+    /* margin-left: -60px; */
 }
 
 .NgheThuat-img img {
     width: 100%;
-    max-width: 600px;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
     border: 8px solid #fff8e1;
@@ -751,23 +752,26 @@ img:hover {
 .footer-left {
   flex: 1;
   min-width: 220px;
-  margin-left: -50px; 
+  /* margin-left: -50px; */
 }
 
 .footer-title {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 10px;
+  font-family: "Jura", sans-serif;
 }
 .footer-column {
   min-width: 200px;
   flex:1;
   margin-left: 100px;
+  font-family: "Jura", sans-serif;
 }
 .footer-slogan {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 15px;
+  font-family: "Jura", sans-serif;
 }
 
 .social-icons img {
@@ -801,6 +805,7 @@ img:hover {
   font-size: 16px;
   margin-bottom: 8px;
   text-decoration: underline;
+  font-family: "Jura", sans-serif;
 }
 
 .footer-links ul {
@@ -820,6 +825,7 @@ img:hover {
 .subscribe h3 {
   font-size: 14px;
   margin-bottom: 8px;
+  font-family: "Jura", sans-serif;
 }
 
 .subscribe form {
@@ -849,6 +855,7 @@ img:hover {
 .contact-info {
   font-size: 14px;
   margin-top: 35px;
+  font-family: "Jura", sans-serif;
 }
 
 .footer-bottom {
@@ -868,59 +875,6 @@ img:hover {
     header .nav .inner-text {
         letter-spacing: -1.5px;
     }
-
-/* Content */
-    .content {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .AmThuc-img {
-    width: 900px;
-    margin-right: 0;
-  }
-
-  /* .section {
-    gap: 16px;
-  }
-
-  .card {
-    width: calc((100vw - 60px) / 5);
-    height: 220px;
-  } */
-
-  .NgheTT-row,
-  .NgheThuat-row {
-    gap: 24px;
-  }
-
-  .NgheTT-img img {
-    width: 350px;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .NgheTT-ct {
-    margin-right: 4%;
-  }
-
-  .NgheThuat-img {
-    max-width: 60%;
-  }
-
-  .NgheThuat-img img {
-    max-width: 500px;
-    height: auto;
-  }
-
-  .NgheThuat-ct {
-    max-width: 40%;
-  }
-
-  .section-divider {
-    width: 600px;
-    margin: 36px auto;
-  }
 }
 
 @media (max-width: 1199px) {
@@ -972,42 +926,6 @@ img:hover {
         opacity: 1;
         right: 12px;
     }
-
-    /* Content */
-    .content {
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-  .AmThuc-img {
-    width: 700px;
-    margin-right: 0;
-  }
-  /* .section {
-    gap: 12px;
-  }
-  .card {
-    width: calc((100vw - 40px) / 4);
-    height: 180px;
-  } */
-  .NgheTT-row,
-  .NgheThuat-row {
-    gap: 16px;
-  }
-  .NgheTT-img img,
-  .NgheThuat-img img {
-    width: 220px;
-    max-width: 100%;
-    height: auto;
-  }
-  .NgheTT-ct,
-  .NgheThuat-ct {
-    margin-right: 0;
-    max-width: 100%;
-  }
-  .section-divider {
-    width: 350px;
-    margin: 24px auto;
-  }
 }
 
 
@@ -1045,43 +963,6 @@ img:hover {
     header .nav img {
         height: 50px;
     }
-
-    /* Content */
-    .content {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-  .AmThuc-img {
-    width: 100%;
-    margin-right: 0;
-  }
-  /* .section {
-    gap: 8px;
-  } */
-  /* .card {
-    width: calc((100vw - 20px) / 2);
-    height: 140px;
-  } */
-  .NgheTT-row,
-  .NgheThuat-row {
-    flex-direction: column;
-    gap: 12px;
-  }
-  .NgheTT-img img,
-  .NgheThuat-img img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-  .NgheTT-ct,
-  .NgheThuat-ct {
-    margin-right: 0;
-    max-width: 100%;
-  }
-  .section-divider {
-    width: 90%;
-    margin: 18px auto;
-  }
 }
 
 @media (max-width: 767.99px) {
@@ -1122,48 +1003,6 @@ img:hover {
         right: 18px;
         top: 9px;
     }
-
-    /* Content */
-      .content h1 {
-    font-size: 32px;
-    margin-bottom: 12px;
-  }
-  .AmThuc {
-    margin-top: 18px;
-    margin-bottom: 28px;
-  }
-  .AmThuc-img {
-    margin-top: 8px;
-    margin-bottom: 12px;
-  }
-  /* .section {
-    flex-direction: column;
-    gap: 8px;
-  } */
-  /* .card {
-    width: 100%;
-    height: 120px;
-  } */
-  .NgheTT-row,
-  .NgheThuat-row {
-    flex-direction: column;
-    gap: 8px;
-  }
-  .NgheTT-img img,
-  .NgheThuat-img img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-  .NgheTT-ct,
-  .NgheThuat-ct {
-    margin-right: 0;
-    max-width: 100%;
-  }
-  .section-divider {
-    width: 80%;
-    margin: 12px auto;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -1199,39 +1038,14 @@ img:hover {
         right: 14px;
         top: 9px;
     }
-
-    /* Content */
-    .content {
-    margin-left: 1%;
-    margin-right: 1%;
-  }
-  .content h1 {
-    font-size: 22px;
-    margin-bottom: 8px;
-  }
-  .AmThuc-img {
-    margin-top: 6px;
-    margin-bottom: 8px;
-  }
-  /* .card {
-    width: 100%;
-    height: 80px;
-  } */
-  .section-divider {
-    width: 60%;
-    margin: 8px auto;
-  }
-  .NgheTT-row,
-  .NgheThuat-row {
-    gap: 4px;
-  }
 }
+
 /* --- Responsive --- */
 /* Màn hình ≤ 1200px */
 @media (max-width: 1200px) {
   .intro-card {
-    min-width: 300px;
-    height: 250px;
+    min-width: 500px;
+    height: 300px;
   }
 
   .intro-label {
@@ -1241,6 +1055,11 @@ img:hover {
 
   .news h2 {
     font-size: 26px;
+  }
+
+  .news-item img {
+    width: 50%;
+
   }
 
   .news-content h3 {
@@ -1264,8 +1083,8 @@ img:hover {
 /* Màn hình ≤ 889px */
  @media (max-width: 889px) {
   .intro-card {
-    min-width: 280px;
-    height: 230px;
+    min-width: 400px;
+    height: 250px;
   }
   .news-grid {
     grid-template-columns: 1fr;
@@ -1329,8 +1148,8 @@ img:hover {
   }
 
   .intro-card {
-    min-width: 220px;
-    height: 140px;
+    min-width: 350px;
+    height: 190px;
     border-radius: 12px;
   }
 
@@ -1399,8 +1218,7 @@ img:hover {
 
   /* Intro */
   .intro-card {
-    min-width: 180px;
-    height: 120px;
+    height: 160px;
     border-radius: 10px;
   }
 
@@ -1431,6 +1249,10 @@ img:hover {
 
   .news-content p {
     font-size: 12px;
+  }
+
+  .news-content {
+    margin-top: 10px;
   }
 
   /* Footer */
@@ -1472,5 +1294,151 @@ img:hover {
   .social-icons img {
     width: 24px;
     height: 24px;
+  }
+}
+
+/* ========================
+   1. max-width: 1200px
+   ======================== */
+@media (max-width: 1200px) {
+  .content h1 {
+    font-size: 50px;
+  }
+
+  .AmThuc-img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .NgheTT-row, 
+  .NgheThuat-row {
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .NgheThuat-ct {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .NgheThuat-img {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* ========================
+   2. max-width: 889px
+   ======================== */
+@media (max-width: 889px) {
+  .content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .content h1 {
+    font-size: 42px;
+  }
+
+  .NgheTT-img img,
+  .NgheThuat-img img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .NgheTT-ct,
+  .NgheThuat-ct {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .card {
+    width: calc((100vw - 40px) / 2); /* 2 card trên 1 hàng */
+  }
+  .NgheTT-npb {
+    flex-direction: column;
+    align-items: center; /* căn giữa nếu muốn */
+  }
+
+  .NgheTT-npb > div {
+    flex: 1 1 100%;
+    max-width: 500px; /* Giới hạn chiều rộng nếu không muốn quá to */
+  }
+}
+
+/* ========================
+   3. max-width: 767.99px
+   ======================== */
+@media (max-width: 767.99px) {
+  .content h1 {
+    font-size: 36px;
+  }
+
+  .AmThuc-img {
+    width: 100%;
+  }
+
+  .npb-item1 img,
+  .npb-item2 img,
+  .npb-item3 img {
+    height: 160px;
+  }
+
+  .npb-item1 p,
+  .npb-item2 p,
+  .npb-item3 p {
+    font-size: 12px;
+  }
+
+  .card {
+    width: calc(100vw - 40px); /* 1 card chiếm full chiều ngang */
+    height: 220px;
+  }
+  .NgheTT-npb {
+    flex-direction: column;
+    align-items: center; /* căn giữa nếu muốn */
+  }
+
+  .NgheTT-npb > div {
+    flex: 1 1 100%;
+    max-width: 500px; /* Giới hạn chiều rộng nếu không muốn quá to */
+  }
+}
+
+/* ========================
+   4. max-width: 575.98px
+   ======================== */
+@media (max-width: 575.98px) {
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .section-divider {
+    width: 90%;
+  }
+
+  .npb-item1 img,
+  .npb-item2 img,
+  .npb-item3 img {
+    height: 140px;
+  }
+
+  .label {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .card {
+    height: 180px;
+  }
+  .NgheTT-npb {
+    flex-direction: column;
+    align-items: center; /* căn giữa nếu muốn */
+  }
+
+  .NgheTT-npb > div {
+    flex: 1 1 100%;
+    max-width: 500px; /* Giới hạn chiều rộng nếu không muốn quá to */
   }
 }
