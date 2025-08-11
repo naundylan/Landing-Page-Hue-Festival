@@ -4,18 +4,69 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hue Festival 2025</title>
+    <!-- Link GG Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Keania+One&family=Megrim&display=swap" rel="stylesheet">
+    <!-- Link cdn CSS FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Ho+d5nLPdl32z4TQo9ox5+KhY1VzdtqREjq/q1k9xIogw5Ad5g8hJPoJfbI6qzMc6mDcoJ8Yq6LP3/jgA30uxA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- Link cdn CSS Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/style.css">
   </head>
 <body>
+    <!-- Overlay -->
+    <div class="overlay disabled"></div>
+    <!-- Dropdown -->
+    <div class="dropdown">
+        <button class="btn btn-secondary open-btn" data-bs-auto-close="false" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">GIỚI THIỆU</a></li>
+            <li><a class="dropdown-item" href="#">SỰ KIỆN</a></li>
+            <li><a class="dropdown-item" href="#">LỊCH TRÌNH</a></li>
+            <li><a class="dropdown-item" href="#">MUA VÉ NGAY</a></li>
+            <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+        </ul>
+    </div>
+    <!-- Backgr -->
+    <div class="background"></div>
     <!-- Header -->
     <header class="container-fluid">
-        
+        <!-- Navbar -->
+        <div class="wrapper font-jura" id="navbar">
+            <div class="d-flex nav align-items-center justify-content-between">
+                <div class="col-4 logo">
+                    <a href="#" class="inner-img">
+                        <img src="../assets/images/festival-logo.png" alt="logo">
+                    </a>
+                    <div class="align-items-center d-flex inner-text"><p>DI SẢN VĂN HÓA<br>VỚI HỘI NHẬP PHÁT TRIỂN</p></div>
+                </div>
+                <div class="col menu d-flex align-items-center justify-content-end">
+                    <ul class="ctrl-bar d-flex align-items-center justify-content-center">
+                        <li><a href="#">GIỚI THIỆU</a></li>
+                        <li><a href="#">SỰ KIỆN</a></li>
+                        <li><a href="#">LỊCH TRÌNH</a></li>
+                        <li><a href="#" class="ticket-btn">MUA VÉ NGAY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero section -->
+        <div class="hero-section font-jura d-flex align-items-center justify-content-center">
+            <div class="text-center">
+                <div class="sz-64 inner-title font-keania-one">FESTIVAL</div>
+                <div class="sz-128 inner-text font-megrim">HUE 2025</div>
+            </div>
+            <div class="inner-desc">Festival Huế 2025 – Di sản Hội Nhập, Văn hóa Toả Sáng</div>
+            <div class="inner-btn"><a href="#">Tìm hiểu thêm</a></div>
+        </div>
     </header>
 
     <!-- News -->
-    <section>
+    <section class="news">
         Code Tin tức ở đây
     </section>
 
@@ -38,10 +89,10 @@
     <footer>
         Code footer ở đây
     </footer>
-    
+    <!-- Link cdn JS FontAwesomes -->
+    <script src="https://kit.fontawesome.com/9421580485.js" crossorigin="anonymous"></script>
     <!-- Link cdn JS Boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="../assets/main.js"></script>
 </body>
