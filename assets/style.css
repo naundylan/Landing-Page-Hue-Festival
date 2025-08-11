@@ -378,6 +378,8 @@ header .hero-section .inner-text {
 .intro-section {
   position: relative;
   z-index: 2;
+   margin-top: 50px; 
+  padding: 0 20px 10px;
 }
 
 /* Nền intro section */
@@ -396,11 +398,12 @@ header .hero-section .inner-text {
 
 /* Container cuộn ngang  */
 .intro-scroll-container {
+  /* height: 1000px; */
   display: flex;
   gap: 10px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  /* padding: 30px 0; */
+  padding: 0 20px 10px;
   box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
@@ -409,8 +412,8 @@ header .hero-section .inner-text {
 
 /* Card */
 .intro-card {
-  min-width: 300px;
-  height: 160px;
+  min-width: 600px;
+  height: 400px;
   background-size: cover;
   background-position: center;
   border-radius: 16px;
@@ -443,7 +446,7 @@ header .hero-section .inner-text {
 }
 
 .news h2 {
-  font-size: 28px;
+  font-size: 45px;
   margin-bottom: 20px;
 }
 
@@ -467,24 +470,27 @@ header .hero-section .inner-text {
 }
 
 .news-item img {
-  width: 160px;
-  height: 120px;
+  width: 380px;
+  height: 100%;
   object-fit: cover;
+  border-radius: 15px;
 }
 
 .news-content {
   padding: 15px;
+  margin-top: 50px;
 }
 
 .news-content h3 {
-  font-size: 18px;
+  font-size: 23px;
   margin-bottom: 8px;
 }
 
 .news-content p {
-  font-size: 14px;
+  font-size: 16px;
   color: #444;
   line-height: 1.4;
+  text-align: justify;
 }
 
 
@@ -701,11 +707,14 @@ img:hover {
   border-bottom-right-radius: 16px;
   box-sizing: border-box;
 }
+/* Footer */
 .footer {
+  width: 100vw;
   background: #555;
   color: white;
   font-family: sans-serif;
   padding: 30px 0;
+  margin: 0;
 }
 
 .footer-container {
@@ -717,6 +726,9 @@ img:hover {
   grid-template-columns: repeat(3, 1fr); /* 3 cột */
   gap: 40px;
   flex-wrap: wrap;
+  gap: clamp(8px, 3vw, 20px);
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .footer-left {
@@ -1006,8 +1018,8 @@ img:hover {
 /* Màn hình ≤ 1200px */
 @media (max-width: 1200px) {
   .intro-card {
-    min-width: 260px;
-    height: 150px;
+    min-width: 300px;
+    height: 250px;
   }
 
   .intro-label {
@@ -1037,8 +1049,12 @@ img:hover {
 
 }
 
-/* Màn hình ≤ 992px */
- @media (max-width: 992px) {
+/* Màn hình ≤ 889px */
+ @media (max-width: 889px) {
+  .intro-card {
+    min-width: 280px;
+    height: 230px;
+  }
   .news-grid {
     grid-template-columns: 1fr;
   }
@@ -1065,17 +1081,23 @@ img:hover {
   }
   .footer-container {
     flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+    justify-content: flex-start;
+    /* gap: 10px; */
+    gap: clamp(10px, 3vw, 20px); /* Khoảng cách co giãn: nhỏ ở màn nhỏ, lớn ở màn to */
+    padding: 0 16px;
+    /* gap: 10px;  */
+    flex-wrap: wrap; 
   }
 
   .footer-left {
     margin-left: 0;
+    min-width: 180px;
   }
 
   .footer-column {
     margin-left: 0;
-    min-width: 200px;
+    /* min-width: 200px; */
+    min-width: 180px;         
   }
 
   .footer-right {
@@ -1088,7 +1110,7 @@ img:hover {
 } 
 
 /* Màn hình ≤ 778px */
- @media (max-width: 778px) {
+ @media (max-width: 767.99px) {
   .intro-scroll-container {
     gap: 8px;
     padding-bottom: 8px;
@@ -1124,6 +1146,8 @@ img:hover {
     align-items: center;
     text-align: center;
     padding: 20px;
+    /* gap: 10px; 
+    flex-wrap: wrap;  */
   }
 
   .footer-left, 
@@ -1158,3 +1182,83 @@ img:hover {
     width: 100%;
   }
 } 
+/* Màn hình ≤ 575.98px (Mobile nhỏ) */
+@media (max-width: 575.98px) {
+
+  /* Intro */
+  .intro-card {
+    min-width: 180px;
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  .intro-label {
+    font-size: 11px;
+    padding: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  /* News */
+  .news {
+    padding: 15px;
+  }
+
+  .news h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .news-item img {
+    height: 150px;
+  }
+
+  .news-content h3 {
+    font-size: 15px;
+  }
+
+  .news-content p {
+    font-size: 12px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .footer-left, 
+  .footer-column, 
+  .footer-right {
+    margin-left: 0;
+    min-width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .subscribe form {
+    flex-direction: column;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+}
